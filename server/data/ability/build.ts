@@ -1,8 +1,8 @@
-import path from 'node:path'
-import { readJson, writeFormatted } from '../../scripts/utils.js'
+import { getDirnameFromImportMeta, readGraphQLAndFetch, writeFormatted } from '../../scripts/utils.js'
 
-export const buildAbilities = () => {
-	const rawAbilities = readJson(path.join(__dirname, 'raw.json'))
+export const buildAbilities = async () => {
+	const __dirname = getDirnameFromImportMeta(import.meta.url)
+	const rawAbilities = await readGraphQLAndFetch(__dirname)
 
 	const abilities = rawAbilities.map((ability: any) => {
 		return {

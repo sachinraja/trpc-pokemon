@@ -25,10 +25,12 @@ importers:
     specifiers:
       '@trpc/server': 10.0.0-proxy-alpha.57
       '@types/node': 18.7.13
+      undici: 5.10.0
       zod: 3.18.0
     devDependencies:
       '@trpc/server': 10.0.0-proxy-alpha.57
       '@types/node': 18.7.13
+      undici: 5.10.0
       zod: 3.18.0
 
 packages:
@@ -1013,6 +1015,11 @@ packages:
     resolution: {integrity: sha512-C0I1UsrrDHo2fYI5oaCGbSejwX4ch+9Y5jTQELvovfmFkK3HHSZJB8MSJcWLmCUBzQBchCrZ9rMRV6GuNrvGtw==}
     engines: {node: '>=4.2.0'}
     hasBin: true
+    dev: true
+
+  /undici/5.10.0:
+    resolution: {integrity: sha512-c8HsD3IbwmjjbLvoZuRI26TZic+TSEe8FPMLLOkN1AfYRhdjnKBU6yL+IwcSCbdZiX4e5t0lfMDLDCqj4Sq70g==}
+    engines: {node: '>=12.18'}
     dev: true
 
   /undici/5.9.1:

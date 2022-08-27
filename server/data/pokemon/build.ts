@@ -1,8 +1,8 @@
-import path from 'node:path'
-import { readJson, writeFormatted } from '../../scripts/utils.js'
+import { getDirnameFromImportMeta, readGraphQLAndFetch, writeFormatted } from '../../scripts/utils.js'
 
-export const buildPokemon = () => {
-	const pokemons = readJson(path.join(__dirname, 'raw.json'))
+export const buildPokemon = async () => {
+	const __dirname = getDirnameFromImportMeta(import.meta.url)
+	const pokemons = await readGraphQLAndFetch(__dirname)
 
 	const newPokemon = pokemons.map((pokemon: any) => {
 		return {
@@ -21,3 +21,5 @@ export const buildPokemon = () => {
 		type: 'Pokemon',
 	})
 }
+
+buildPokemon()

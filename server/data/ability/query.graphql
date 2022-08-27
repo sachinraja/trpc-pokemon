@@ -1,5 +1,5 @@
-{
-	abilities: pokemon_v2_ability {
+query {
+	result: pokemon_v2_ability {
 		name
 		ability_names: pokemon_v2_abilitynames(where: { language_id: { _eq: 9 } }) {
 			name

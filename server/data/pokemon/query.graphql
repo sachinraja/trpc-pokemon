@@ -1,5 +1,5 @@
-{
-	pokemon: pokemon_v2_pokemon {
+query {
+	result: pokemon_v2_pokemon {
 		name
 		weight
 		height
