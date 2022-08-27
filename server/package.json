@@ -13,26 +13,39 @@
 	},
 	"author": "Sachin Raja <sachinraja2349@gmail.com>",
 	"license": "MIT",
+	"main": "dist/index.cjs",
 	"types": "dist/index.d.ts",
 	"exports": {
 		".": {
-			"types": "./dist/index.d.ts"
+			"import": "./dist/index.js",
+			"default": "./dist/index.cjs"
 		}
 	},
 	"scripts": {
 		"build:data": "tsx scripts/build.ts",
-		"build:types": "rm -rf dist && tsc -p tsconfig.build.json",
-		"build": "pnpm build:data && pnpm build:types",
+		"build": "pnpm build:data && pnpm tsup",
 		"postinstall": "pnpm build:data"
 	},
+	"files": [
+		"dist"
+	],
 	"peerDependencies": {
 		"@trpc/server": "^9 | 10.0.0-alpha.25"
 	},
 	"devDependencies": {
 		"@trpc/server": "10.0.0-alpha.25",
 		"@types/node": "18.7.13",
+		"tsup": "6.2.3",
 		"undici": "5.10.0",
 		"zod": "3.18.0"
 	},
-	"files": ["dist"]
+	"tsup": {
+		"entry": ["index.ts"],
+		"format": ["esm", "cjs"],
+		"dts": {
+			"resolve": true
+		},
+		"splitting": true,
+		"clean": true
+	}
 }
