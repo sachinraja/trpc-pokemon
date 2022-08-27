@@ -1,0 +1,31 @@
+{
+	abilities: pokemon_v2_ability {
+		name
+		ability_names: pokemon_v2_abilitynames(where: { language_id: { _eq: 9 } }) {
+			name
+		}
+		flavor_text: pokemon_v2_abilityflavortexts(
+			where: { language_id: { _eq: 9 } }
+			order_by: { pokemon_v2_versiongroup: { order: desc } }
+			limit: 1
+		) {
+			description: flavor_text
+		}
+		effect_texts: pokemon_v2_abilityeffecttexts(
+			where: { language_id: { _eq: 9 } }
+		) {
+			short_effect
+			effect
+		}
+		ability_changes: pokemon_v2_abilitychanges {
+			texts: pokemon_v2_abilitychangeeffecttexts(
+				where: { language_id: { _eq: 9 } }
+			) {
+				effect
+			}
+		}
+		generation: pokemon_v2_generation {
+			id
+		}
+	}
+}

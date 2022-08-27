@@ -1,0 +1,13 @@
+{
+	pokemon: pokemon_v2_pokemon {
+		name
+		weight
+		height
+		base_experience
+		abilities: pokemon_v2_pokemonabilities {
+			ability: pokemon_v2_ability {
+				id: name
+			}
+		}
+	}
+}
