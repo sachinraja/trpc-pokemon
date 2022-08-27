@@ -5,7 +5,7 @@ importers:
   .:
     specifiers:
       '@cloudflare/workers-types': 3.14.1
-      '@trpc/server': 10.0.0-proxy-alpha.57
+      '@trpc/server': 10.0.0-alpha.25
       dprint: 0.30.3
       tsx: 3.8.2
       typescript: 4.8.2
@@ -15,7 +15,7 @@ importers:
       zod: 3.18.0
     devDependencies:
       '@cloudflare/workers-types': 3.14.1
-      '@trpc/server': 10.0.0-proxy-alpha.57
+      '@trpc/server': 10.0.0-alpha.25
       dprint: 0.30.3
       tsx: 3.8.2
       typescript: 4.8.2
@@ -23,12 +23,12 @@ importers:
 
   server:
     specifiers:
-      '@trpc/server': 10.0.0-proxy-alpha.57
+      '@trpc/server': 10.0.0-alpha.25
       '@types/node': 18.7.13
       undici: 5.10.0
       zod: 3.18.0
     devDependencies:
-      '@trpc/server': 10.0.0-proxy-alpha.57
+      '@trpc/server': 10.0.0-alpha.25
       '@types/node': 18.7.13
       undici: 5.10.0
       zod: 3.18.0
@@ -250,8 +250,10 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@trpc/server/10.0.0-proxy-alpha.57:
-    resolution: {integrity: sha512-J9wwlxGnBHPPOJFxNAu0VYZyxIQBOKC1dmir/5BTdwCpA6NuCbJY9U0SN/vKJZJq/9METz8COliOWcZCuHsNKw==}
+  /@trpc/server/10.0.0-alpha.25:
+    resolution: {integrity: sha512-bfTw8E25npEO+JswRGWzQzMiB94Sa6PKKHeIK0a7VDwXPC2nwP2GeyedREQ9NVqp5iwRprt4eQoDoc4kWF8Sig==}
+    dependencies:
+      tslib: 2.4.0
     dev: true
 
   /@types/node/18.7.13:
@@ -998,6 +1000,10 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+    dev: true
+
+  /tslib/2.4.0:
+    resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
     dev: true
 
   /tsx/3.8.2:

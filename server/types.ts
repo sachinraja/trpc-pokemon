@@ -12,5 +12,5 @@ export interface Pokemon {
 	weight: number
 	height: number
 	baseExperience: number
-	abilities: string[]
+	abilities: { id: string; name: string }[]
 }

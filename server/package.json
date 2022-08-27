@@ -9,22 +9,21 @@
 		}
 	},
 	"scripts": {
-		"build-data": "tsx scripts/build.ts",
-		"build": "pnpm build-data && tsc -p tsconfig.build.json"
+		"build:data": "tsx scripts/build.ts",
+		"build:types": "rm -rf dist && tsc -p tsconfig.build.json",
+		"build": "pnpm build:data && pnpm build:types",
+		"postinstall": "pnpm build:data"
 	},
 	"peerDependencies": {
-		"@trpc/server": "next"
+		"@trpc/server": "^9 | 10.0.0-alpha.25"
 	},
 	"devDependencies": {
-		"@trpc/server": "10.0.0-proxy-alpha.57",
+		"@trpc/server": "10.0.0-alpha.25",
 		"@types/node": "18.7.13",
 		"undici": "5.10.0",
 		"zod": "3.18.0"
 	},
 	"files": [
-		"data/*/data*",
-		"router",
-		"types.ts",
-		"index.ts"
+		"dist"
 	]
 }
