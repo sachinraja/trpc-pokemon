@@ -1,3 +1,4 @@
 name = "trpc-pokemon"
 main = "src/index.ts"
 compatibility_date = "2022-08-27"
+routes = [{ pattern = "pokemon.s4n.land", custom_domain = true }]
