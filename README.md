@@ -20,7 +20,7 @@ const client = createTRPCClient<PokemonRouter>({
 })
 
 const bulbasaur = await client.query('pokemon.byId', 'bulbasaur')
-const ability = await client.query('ability.byId', 'chlorophyll')
+const chlorophyll = await client.query('ability.byId', 'chlorophyll')
 ```
 
 ## Routes

@@ -6,11 +6,11 @@
 		"deploy": "wrangler publish"
 	},
 	"dependencies": {
+		"@trpc/server": "10.0.0-alpha.25",
 		"zod": "3.18.0"
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "3.14.1",
-		"@trpc/server": "10.0.0-alpha.25",
 		"dprint": "0.30.3",
 		"tsx": "3.8.2",
 		"typescript": "4.8.2",

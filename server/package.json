@@ -31,9 +31,10 @@
 		"dist"
 	],
 	"peerDependencies": {
-		"@trpc/server": "^9 | 10.0.0-alpha.25"
+		"@trpc/server": "10.0.0-alpha.25"
 	},
 	"devDependencies": {
+		"@trpc/client": "10.0.0-alpha.25",
 		"@trpc/server": "10.0.0-alpha.25",
 		"@types/node": "18.7.13",
 		"tsup": "6.2.3",
@@ -41,8 +42,13 @@
 		"zod": "3.18.0"
 	},
 	"tsup": {
-		"entry": ["index.ts"],
-		"format": ["esm", "cjs"],
+		"entry": [
+			"index.ts"
+		],
+		"format": [
+			"esm",
+			"cjs"
+		],
 		"dts": {
 			"resolve": true
 		},
