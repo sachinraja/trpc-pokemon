@@ -8,6 +8,9 @@ public tRPC Pokemon API
 npm install trpc-pokemon
 ```
 
+> **Warning**
+> You must be on `@trpc/server@10.0.0-alpha.25`. This is because this version is agnostic from Node and we deploy to a Cloudflare Worker.
+
 ## Usage
 
 ```ts
