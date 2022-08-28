@@ -5,7 +5,7 @@ public tRPC Pokemon API
 ## Install
 
 ```sh
-npm install trpc-pokemon
+npm install trpc-pokemon @trpc/server@^10.0.0-alpha.25
 ```
 
 > **Warning**
