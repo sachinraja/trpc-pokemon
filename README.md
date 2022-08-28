@@ -15,6 +15,7 @@ import { createTRPCClient } from '@trpc/client'
 import { PokemonRouter, trpcPokemonUrl } from 'trpc-pokemon'
 
 const client = createTRPCClient<PokemonRouter>({
+	// https://pokemon.s4n.land
 	url: trpcPokemonUrl,
 })
 
