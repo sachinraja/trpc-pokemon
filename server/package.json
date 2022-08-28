@@ -1,6 +1,6 @@
 {
 	"name": "trpc-pokemon",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"type": "module",
 	"description": "public tRPC Pokemon API",
 	"repository": {
@@ -24,7 +24,9 @@
 	"scripts": {
 		"build:data": "tsx scripts/build.ts",
 		"build": "pnpm build:data && pnpm tsup",
-		"postinstall": "pnpm build:data"
+		"clean": "rm -rf data/*/cached-response.json",
+		"postinstall": "pnpm build:data",
+		"prepublishOnly": "pnpm build"
 	},
 	"files": [
 		"dist"
