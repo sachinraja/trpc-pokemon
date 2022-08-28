@@ -25,7 +25,6 @@
 		"build:data": "tsx scripts/build.ts",
 		"build": "pnpm build:data && pnpm tsup",
 		"clean": "rm -rf data/*/cached-response.json",
-		"postinstall": "pnpm build:data",
 		"prepublishOnly": "pnpm clean && pnpm build"
 	},
 	"files": [
