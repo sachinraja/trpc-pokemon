@@ -3,7 +3,7 @@ import { appRouter } from '../server/router/_app.js'
 
 export default {
 	async fetch(request: Request): Promise<Response> {
-		return fetchRequestHandler({
+		const response = await fetchRequestHandler({
 			endpoint: '',
 			req: request,
 			createContext: () => {
@@ -11,5 +11,9 @@ export default {
 			},
 			router: appRouter,
 		})
+
+		response.headers.set('cache-control', 'max-age=86400')
+
+		return response
 	},
 }
