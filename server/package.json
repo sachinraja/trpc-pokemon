@@ -11,7 +11,7 @@
 	"bugs": {
 		"url": "https://github.com/sachinraja/trpc-pokemon/issues"
 	},
-	"author": "Sachin Raja <sachinraja2349@gmail.com>",
+	"author": "Sachin Raja <me@s4n.land>",
 	"license": "MIT",
 	"main": "dist/index.cjs",
 	"types": "dist/index.d.ts",
