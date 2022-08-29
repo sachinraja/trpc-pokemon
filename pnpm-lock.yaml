@@ -23,15 +23,15 @@ importers:
 
   server:
     specifiers:
-      '@trpc/client': 10.0.0-alpha.25
-      '@trpc/server': 10.0.0-alpha.25
+      '@trpc/client': 9.27.2
+      '@trpc/server': 9.27.2
       '@types/node': 18.7.13
       tsup: 6.2.3
       undici: 5.10.0
       zod: 3.18.0
     devDependencies:
-      '@trpc/client': 10.0.0-alpha.25_6o5npo4lt3ivsglgy42bx6izxu
-      '@trpc/server': 10.0.0-alpha.25
+      '@trpc/client': 9.27.2_@trpc+server@9.27.2
+      '@trpc/server': 9.27.2
       '@types/node': 18.7.13
       tsup: 6.2.3
       undici: 5.10.0
@@ -282,19 +282,24 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@trpc/client/10.0.0-alpha.25_6o5npo4lt3ivsglgy42bx6izxu:
-    resolution: {integrity: sha512-6ky7qHq4/M1WSROy/lMm00gUSwKDyWbhIMfNKM6Ksc6YrXcV/Mr6wHz4KOhxTDskEp5/M59ht4wY4da25Ope3Q==}
+  /@trpc/client/9.27.2_@trpc+server@9.27.2:
+    resolution: {integrity: sha512-rpsgJJMalOtki5VjcyheL0zdft23mDnoBHn5cJMZLf3ssymCZq2crbvCiUmCRU289lYHrqffaaZ+9PqCSsVKfg==}
     peerDependencies:
-      '@trpc/server': 10.0.0-alpha.25
+      '@trpc/server': 9.27.2
     dependencies:
       '@babel/runtime': 7.18.9
-      '@trpc/server': 10.0.0-alpha.25
+      '@trpc/server': 9.27.2
     dev: true
 
   /@trpc/server/10.0.0-alpha.25:
     resolution: {integrity: sha512-bfTw8E25npEO+JswRGWzQzMiB94Sa6PKKHeIK0a7VDwXPC2nwP2GeyedREQ9NVqp5iwRprt4eQoDoc4kWF8Sig==}
     dependencies:
       tslib: 2.4.0
+    dev: false
+
+  /@trpc/server/9.27.2:
+    resolution: {integrity: sha512-LcXCC004SYWVdHqjSZVpoKkcM0tJNwWtvmjmE2Jir36F0siY1CCbr7g2vz6LcOtA/q7Jj5G2/x1qMWzlPq/Bwg==}
+    dev: true
 
   /@types/node/18.7.13:
     resolution: {integrity: sha512-46yIhxSe5xEaJZXWdIBP7GU4HDTG8/eo0qd9atdiL+lFpA03y8KS+lkTN834TWJj5767GbWv4n/P6efyTFt1Dw==}
@@ -1445,6 +1450,7 @@ packages:
 
   /tslib/2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
+    dev: false
 
   /tsup/6.2.3:
     resolution: {integrity: sha512-J5Pu2Dx0E1wlpIEsVFv9ryzP1pZ1OYsJ2cBHZ7GrKteytNdzaSz5hmLX7/nAxtypq+jVkVvA79d7S83ETgHQ5w==}

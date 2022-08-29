@@ -1,6 +1,6 @@
 {
 	"name": "trpc-pokemon",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"type": "module",
 	"description": "public tRPC Pokemon API",
 	"repository": {
@@ -31,11 +31,11 @@
 		"dist"
 	],
 	"peerDependencies": {
-		"@trpc/server": "10.0.0-alpha.25"
+		"@trpc/server": "^9"
 	},
 	"devDependencies": {
-		"@trpc/client": "10.0.0-alpha.25",
-		"@trpc/server": "10.0.0-alpha.25",
+		"@trpc/client": "9.27.2",
+		"@trpc/server": "9.27.2",
 		"@types/node": "18.7.13",
 		"tsup": "6.2.3",
 		"undici": "5.10.0",

@@ -26,8 +26,6 @@ const handleOptions = (request: Request) => {
 			headers: responseHeaders,
 		})
 	} else {
-		// Handle standard OPTIONS request.
-		// If you want to allow other HTTP Methods, you can do that here.
 		return new Response(null, {
 			headers: {
 				Allow: 'GET, HEAD, POST, OPTIONS',
