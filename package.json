@@ -7,7 +7,7 @@
 		"build": "tsx build.ts"
 	},
 	"dependencies": {
-		"@trpc/server": "10.0.0-alpha.25",
+		"@trpc/server": "9.27.2",
 		"zod": "3.18.0"
 	},
 	"devDependencies": {

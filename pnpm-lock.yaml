@@ -5,7 +5,7 @@ importers:
   .:
     specifiers:
       '@cloudflare/workers-types': 3.14.1
-      '@trpc/server': 10.0.0-alpha.25
+      '@trpc/server': 9.27.2
       dprint: 0.30.3
       esbuild: 0.15.5
       esbuild-plugin-ignore: 1.1.1
@@ -14,7 +14,7 @@ importers:
       wrangler: 2.0.27
       zod: 3.18.0
     dependencies:
-      '@trpc/server': 10.0.0-alpha.25
+      '@trpc/server': 9.27.2
       zod: 3.18.0
     devDependencies:
       '@cloudflare/workers-types': 3.14.1
@@ -295,15 +295,8 @@ packages:
       '@trpc/server': 9.27.2
     dev: true
 
-  /@trpc/server/10.0.0-alpha.25:
-    resolution: {integrity: sha512-bfTw8E25npEO+JswRGWzQzMiB94Sa6PKKHeIK0a7VDwXPC2nwP2GeyedREQ9NVqp5iwRprt4eQoDoc4kWF8Sig==}
-    dependencies:
-      tslib: 2.4.0
-    dev: false
-
   /@trpc/server/9.27.2:
     resolution: {integrity: sha512-LcXCC004SYWVdHqjSZVpoKkcM0tJNwWtvmjmE2Jir36F0siY1CCbr7g2vz6LcOtA/q7Jj5G2/x1qMWzlPq/Bwg==}
-    dev: true
 
   /@types/node/18.7.13:
     resolution: {integrity: sha512-46yIhxSe5xEaJZXWdIBP7GU4HDTG8/eo0qd9atdiL+lFpA03y8KS+lkTN834TWJj5767GbWv4n/P6efyTFt1Dw==}
@@ -1455,10 +1448,6 @@ packages:
   /ts-interface-checker/0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
-
-  /tslib/2.4.0:
-    resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
-    dev: false
 
   /tsup/6.2.3:
     resolution: {integrity: sha512-J5Pu2Dx0E1wlpIEsVFv9ryzP1pZ1OYsJ2cBHZ7GrKteytNdzaSz5hmLX7/nAxtypq+jVkVvA79d7S83ETgHQ5w==}
