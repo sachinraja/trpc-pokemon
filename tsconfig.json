@@ -18,5 +18,5 @@
 		"strict": true,
 		"skipLibCheck": true
 	},
-	"include": ["src", "build.ts"]
+	"include": ["src", "scripts", "build.ts"]
 }

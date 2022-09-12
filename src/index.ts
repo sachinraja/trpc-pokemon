@@ -1,5 +1,6 @@
 import { appRouter } from '../server/router/_app.js'
 import { fetchRequestHandler } from './adapter/fetchRequestHandler.js'
+import { htmlPlaygroundPage, playgroundRouterSchema } from './playground.js'
 
 const corsHeaders = {
 	'Access-Control-Allow-Origin': '*',
@@ -38,6 +39,24 @@ export default {
 	async fetch(request: Request): Promise<Response> {
 		if (request.method === 'OPTIONS') {
 			return handleOptions(request)
+		}
+
+		const url = new URL(request.url)
+
+		if (url.pathname === '/play') {
+			if (request.method === 'GET') {
+				return new Response(htmlPlaygroundPage, {
+					headers: {
+						'Content-Type': 'text/html',
+					},
+				})
+			}
+
+			if (request.method === 'POST') {
+				const body = await request.json()
+				console.log(body)
+				return Response.json(playgroundRouterSchema)
+			}
 		}
 
 		const response = await fetchRequestHandler({

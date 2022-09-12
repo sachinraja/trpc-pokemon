@@ -2,3 +2,4 @@ node_modules
 dist
 server/data/*/cached-response.json
 server/data/*/data.js
+src/playground.js

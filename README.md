@@ -10,6 +10,8 @@ npm install trpc-pokemon @trpc/server
 
 ## Usage
 
+View playground at https://pokemon.s4n.land/play.
+
 ```ts
 import { createTRPCClient } from '@trpc/client'
 import { PokemonRouter, trpcPokemonUrl } from 'trpc-pokemon'
