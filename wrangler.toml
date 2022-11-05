@@ -1,7 +1,7 @@
 name = "trpc-pokemon"
 main = "dist/worker.js"
 compatibility_date = "2022-08-27"
-# routes = [{ pattern = "pokemon.s4n.land", custom_domain = true }]
+routes = [{ pattern = "v10.pokemon.s4n.land", custom_domain = true }]
 
 [build]
 command = "pnpm build"

@@ -1,6 +1,6 @@
 {
 	"name": "trpc-pokemon",
-	"version": "1.0.3",
+	"version": "2.0.0-next.0",
 	"type": "module",
 	"description": "public tRPC Pokemon API",
 	"repository": {
