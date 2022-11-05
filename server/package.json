@@ -31,15 +31,15 @@
 		"dist"
 	],
 	"peerDependencies": {
-		"@trpc/server": "^9"
+		"@trpc/server": "^10.0.0-rc.4"
 	},
 	"devDependencies": {
-		"@trpc/client": "9.27.2",
-		"@trpc/server": "9.27.2",
-		"@types/node": "18.7.13",
-		"tsup": "6.2.3",
-		"undici": "5.10.0",
-		"zod": "3.18.0"
+		"@trpc/client": "10.0.0-rc.4",
+		"@trpc/server": "10.0.0-rc.4",
+		"@types/node": "18.11.9",
+		"tsup": "6.4.0",
+		"undici": "5.12.0",
+		"zod": "3.19.1"
 	},
 	"tsup": {
 		"entry": [

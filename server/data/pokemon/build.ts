@@ -23,12 +23,10 @@ export const buildPokemon = async () => {
 		}
 	})
 
-	writeFormatted({
+	await writeFormatted({
 		data: newPokemon,
 		dirname: __dirname,
 		exportName: 'pokemons',
 		type: 'Pokemon',
 	})
 }
-
-buildPokemon()

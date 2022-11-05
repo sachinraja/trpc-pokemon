@@ -15,7 +15,7 @@ export const buildAbilities = async () => {
 		}
 	})
 
-	writeFormatted({
+	await writeFormatted({
 		data: abilities,
 		dirname: __dirname,
 		exportName: 'abilities',

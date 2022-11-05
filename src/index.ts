@@ -1,5 +1,5 @@
+import { fetchRequestHandler } from '@trpc/server/adapters/fetch'
 import { appRouter } from '../server/router/_app.js'
-import { fetchRequestHandler } from './adapter/fetchRequestHandler.js'
 import { htmlPlaygroundPage, playgroundRouterSchema } from './playground.js'
 
 const corsHeaders = {
