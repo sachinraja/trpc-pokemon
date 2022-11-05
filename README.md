@@ -5,12 +5,12 @@ public tRPC Pokemon API
 ## Install
 
 ```sh
-npm install trpc-pokemon @trpc/server
+npm install trpc-pokemon@next @trpc/server
 ```
 
 ## Usage
 
-View playground at https://pokemon.s4n.land/play.
+View playground at https://v10.pokemon.s4n.land/play.
 
 ```ts
 import { createTRPCClient } from '@trpc/client'
