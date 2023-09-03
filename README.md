@@ -16,13 +16,23 @@ View playground at https://v10.pokemon.s4n.land/play.
 import { createTRPCClient } from '@trpc/client'
 import { PokemonRouter, trpcPokemonUrl } from 'trpc-pokemon'
 
-const client = createTRPCClient<PokemonRouter>({
-	// https://pokemon.s4n.land
-	url: trpcPokemonUrl,
-})
+const client = createTRPCProxyClient<PokemonRouter>({
+  links: [
+    httpBatchLink({
+      url: 'http://localhost:3000/trpc',
+      // You can pass any HTTP headers you wish here
+      async headers() {
+        return {
+          authorization: getAuthCookie(),
+        };
+      },
+    }),
+  ],
+});
 
-const bulbasaur = await client.query('pokemon.byId', 'bulbasaur')
-const chlorophyll = await client.query('ability.byId', 'chlorophyll')
+
+const bulbasaur = await client.pokemon.byId.query('bulbasaur')
+const chlorophyll = await client.pokemon.byId.query('chlorophyll')
 ```
 
 ## Routes
