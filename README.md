@@ -19,13 +19,8 @@ import { PokemonRouter, trpcPokemonUrl } from 'trpc-pokemon'
 const client = createTRPCProxyClient<PokemonRouter>({
   links: [
     httpBatchLink({
-      url: 'http://localhost:3000/trpc',
-      // You can pass any HTTP headers you wish here
-      async headers() {
-        return {
-          authorization: getAuthCookie(),
-        };
-      },
+      // https://pokemon.s4n.land
+      url: trpcPokemonUrl,
     }),
   ],
 });
